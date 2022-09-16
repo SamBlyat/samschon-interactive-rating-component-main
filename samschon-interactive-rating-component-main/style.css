@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+* {
+    color: white;
+    font-family: "Overpass";
+}
+
+:root {
+    --background-color: #141518;
+    --faded-text-color: rgba(255, 255, 255, .5);
+    --orange-color: hsl(25, 97%, 53%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.main-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 95vh;
+}
+
+#star-icon {
+    background-color: #282E37;
+    border-radius: 50%;
+}
+
+.header-text {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.normal-text {
+    color: var(--faded-text-color);
+    margin-top: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.ratings {
+    display: flex;
+}
+
+.rating-box {
+    padding: 10px;
+    color: var(--faded-text-color);
+    background-color: #282E37;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 80%;
+    text-align: center;
+    line-height: 30px;    
+}
+.rating-box:hover {
+    cursor: pointer;
+    background-color: #7E8896;
+    color: white;
+}
+.rating-box#active-rating {
+    background-color: var(--orange-color);
+}
+
+.error-text {
+    color: red !important;
+}
+
+
+.extra {
+    text-align: center;
+}
+
+
+.review-review {
+    background-color: #282E37;
+    color: var(--orange-color);
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.review-card, .review-card-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: #1E232C;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.review-card-new {
+    align-items: center;
+}
+
+
+
+.review-card > *, .review-card-new > *  {
+    padding: 10px;
+}
+
+.submit-btn {
+    background-color: var(--orange-color);
+    border: none;
+    width: 90%;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    background-color: white;
+    color: var(--orange-color);
+}
